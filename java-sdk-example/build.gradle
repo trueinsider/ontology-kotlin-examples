@@ -1,0 +1,18 @@
+plugins {
+    id "org.jetbrains.kotlin.jvm" version "1.2.61"
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile files("lib/ontology-sdk-java-1.0-SNAPSHOT.jar")
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    compile "io.github.novacrypto:BIP32:0.0.9"
+    compile "io.github.novacrypto:BIP39:0.1.9"
+    compile "com.squareup.okhttp3:okhttp:3.6.0"
+    compile "org.bouncycastle:bcprov-jdk15on:1.59"
+    compile "com.alibaba:fastjson:1.2.9"
+}
